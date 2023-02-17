@@ -27,4 +27,4 @@ jobs:
       - name: locust
         run: |
           uvicorn main:app
-          locust --config=./tests/.locust.conf ./tests/locustfile.py 
+          locust --config=./tests/.locust.conf
