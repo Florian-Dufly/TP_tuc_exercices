@@ -23,4 +23,4 @@ jobs:
       - name: pylint
         run: pylint --exit-zero application/
       - name: locust
-        run: locust -f locustfile.py
+        run: locust -f ./tests/locustfile.py
