@@ -23,6 +23,6 @@ jobs:
       - name: pylint
         run: pylint --exit-zero application/
       - name: coverage
-        run: coverage run -m unittest discover ./tests/
+        run: coverage run -m pytest --profile ./
       - name: locust
         run: locust -f ./tests/locustfile.py
